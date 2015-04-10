@@ -1,14 +1,13 @@
 package com.brassanvil.bagame.visual.components;
 
-import lombok.Getter;
-import lombok.Setter;
-
 import com.badlogic.ashley.core.Component;
 import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.utils.IntMap;
 
+/**
+ * Represents an entity's collection of possible animations.
+ */
 public class AnimationComponent extends Component{
 
-	@Getter @Setter
-	private IntMap<Animation> animations = new IntMap<Animation>();
+	public IntMap<Animation> animations = new IntMap<Animation>();
 }

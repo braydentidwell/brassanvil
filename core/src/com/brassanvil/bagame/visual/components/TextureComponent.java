@@ -1,13 +1,12 @@
 package com.brassanvil.bagame.visual.components;
 
-import lombok.Getter;
-import lombok.Setter;
-
 import com.badlogic.ashley.core.Component;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 
+/**
+ * Represents the current visual representation of a draw-able entity.
+ */
 public class TextureComponent extends Component {
 	
-	@Getter @Setter
-	private TextureRegion region = null;
+	public TextureRegion texture = null;
 }

@@ -13,13 +13,13 @@ import com.brassanvil.bagame.map.components.VelocityComponent;
  * This system adjusts an entity's velocity (based on its acceleration) and then its position (based on its velocity), according to
  * the amount of time elapsed.
  */
-@SuppressWarnings("unchecked")
 public class MovementSystem extends IteratingSystem{
 	
 	private ComponentMapper<PositionComponent> positionMapper;
 	private ComponentMapper<VelocityComponent> velocityMapper;
 	private ComponentMapper<AccelerationComponent> accelerationMapper;
 
+	@SuppressWarnings("unchecked")
 	public MovementSystem(int priority) {
 		super(Family.getFor(PositionComponent.class, VelocityComponent.class, AccelerationComponent.class), priority);
 		velocityMapper = ComponentMapper.getFor(VelocityComponent.class);

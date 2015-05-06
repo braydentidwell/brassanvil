@@ -11,7 +11,7 @@ import com.brassanvil.bagame.map.components.PositionComponent;
 import com.brassanvil.bagame.visual.components.TextureComponent;
 
 /**
- * Loops through all drawable entities in the system and renders them.
+ * Loops through all draw-able entities in the system and renders them.
  */
 public class RenderingSystem extends IteratingSystem{
 	
@@ -31,6 +31,7 @@ public class RenderingSystem extends IteratingSystem{
 		textureMapper = ComponentMapper.getFor(TextureComponent.class);
 		positionMapper = ComponentMapper.getFor(PositionComponent.class);
 		renderQueue = new LinkedList<Entity>();
+		this.batch = batch;
 	}
 	
 	@Override

@@ -16,7 +16,7 @@ public class AnimationSystem extends IteratingSystem{
 	private ComponentMapper<TextureComponent> textureMapper;
 
 	@SuppressWarnings("unchecked")
-	public AnimationSystem(Family family, int priority) {
+	public AnimationSystem(int priority) {
 		super(Family.getFor(AnimationComponent.class, AnimationStateComponent.class, TextureComponent.class), priority);
 		animationMapper = ComponentMapper.getFor(AnimationComponent.class);
 		animationStateMapper = ComponentMapper.getFor(AnimationStateComponent.class);
@@ -33,6 +33,7 @@ public class AnimationSystem extends IteratingSystem{
 		Animation currentAnimation = animCom.animations.get(stateCom.state);
 		
 		// Update the amount of time this entity's animation has been in this state
+		// TODO why do this?
 		stateCom.timeElapsed += deltaTime;
 		
 		// Set this entity's current visual frame according to the amount of time this animation has been running

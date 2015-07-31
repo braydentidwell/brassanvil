@@ -5,5 +5,5 @@ import com.badlogic.gdx.math.Vector2;
 
 public class AccelerationComponent extends Component{
 
-	public Vector2 acceleration;
+	public Vector2 acceleration = new Vector2(0, 0);
 }

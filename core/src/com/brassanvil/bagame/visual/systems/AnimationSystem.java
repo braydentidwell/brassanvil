@@ -9,7 +9,7 @@ import com.brassanvil.bagame.visual.components.AnimationComponent;
 import com.brassanvil.bagame.visual.components.AnimationStateComponent;
 import com.brassanvil.bagame.visual.components.TextureComponent;
 
-public class AnimationSystem extends IteratingSystem{
+public class AnimationSystem extends IteratingSystem {
 	
 	private ComponentMapper<AnimationComponent> animationMapper;
 	private ComponentMapper<AnimationStateComponent> animationStateMapper;
@@ -33,7 +33,6 @@ public class AnimationSystem extends IteratingSystem{
 		Animation currentAnimation = animCom.animations.get(stateCom.state);
 		
 		// Update the amount of time this entity's animation has been in this state
-		// TODO why do this?
 		stateCom.timeElapsed += deltaTime;
 		
 		// Set this entity's current visual frame according to the amount of time this animation has been running

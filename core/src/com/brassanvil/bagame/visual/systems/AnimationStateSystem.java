@@ -9,7 +9,7 @@ import com.brassanvil.bagame.visual.components.AnimationStateComponent;
 /**
  * Progresses all animations' elapsed time.
  */
-public class AnimationStateSystem extends IteratingSystem{
+public class AnimationStateSystem extends IteratingSystem {
 	
 	private ComponentMapper<AnimationStateComponent> stateComponent;
 

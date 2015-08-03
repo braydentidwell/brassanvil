@@ -18,13 +18,12 @@ public class TestScreen extends ScreenAdapter {
 	private Engine engine;
 	private OrthographicCamera cam;
 	private SpriteBatch batch;
-	
+
 	private TestWorld world;
 
 	// Note: these are in UNITS, not pixels. Do not think in terms of pixels. The aspect ratio takes care of the pixels for us.
 	private static final int CAM_WIDTH = 100;
 	private static final int CAM_HEIGHT = 100;
-
     private float rotationSpeed = 0.5f;
 	
 	public TestScreen(BrassAnvil game) {

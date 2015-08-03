@@ -22,7 +22,8 @@ public class BrassAnvil extends Game {
 	@Override
 	public void create() {
 		batch = new SpriteBatch();
-		setScreen(new TestScreen(this));
+//		setScreen(new TestScreen(this));
+        setScreen(new TestIsometricScreen(this));
 	}
 
 	@Override
